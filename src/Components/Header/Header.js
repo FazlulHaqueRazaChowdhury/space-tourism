@@ -30,7 +30,7 @@ const Header = () => {
     const location = useLocation();
 
     return (
-        <div id='header'>
+        <div id='header' className='overflow-hidden'>
             <div>
                 <div className="grid grid-cols-2  items-center justify-between">
                     <div className="svg-part ml-[55px]">

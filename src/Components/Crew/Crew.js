@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import './Crew.css';
+import { motion } from 'framer-motion';
 const Crew = () => {
 
     const [person, setPerson] = useState({
@@ -95,7 +96,7 @@ const Crew = () => {
 
                 <div id="crewMain" className='h-[100%]'>
                     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto justify-around justify-items-center items-center gap-x-[125px]">
-                        <div className="text-part  animate__animated animate__slideInLeft  flex flex-col-reverse lg:flex-col items-center  lg:items-start mt-[20px] order-last lg:order-first">
+                        <div className="text-part  animate__animated animate__slideInLeft  flex flex-col items-center  lg:items-start mt-[20px] order-last lg:order-first">
                             <div className="texts flex flex-col items-center justify-center lg:items-start lg:justify-start mb-[50px] ">
                                 <h4 className='text-[26px] lg:text-[32px] secondary-color-main secondary-font'>{person.role}</h4>
                                 <h1 className='text-[40px] lg:text-[56px] primary-color secondary-font my-[20px]'>{person.name}</h1>
@@ -123,10 +124,10 @@ const Crew = () => {
                                 }
                             </div>
                         </div>
-                        <div className="img-part order-first max-w-[325px] lg:max-w-[500px] relative   lg:order-last mt-auto   flex justify-center items-center">
+                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="img-part sm:order-first  md:order-last  lg:order-last max-w-[325px] lg:max-w-[500px] relative   mt-auto   flex justify-center items-center">
                             <hr className='lined absolute  w-[100%] lg:hidden  bottom-0 z-10 h-[1px] text-[#979797]' />
                             <img src={person.images.png} className='animate__animated animate__fadeIn max-h-[625px]' alt="" />
-                        </div>
+                        </motion.div>
 
                     </div>
                 </div>

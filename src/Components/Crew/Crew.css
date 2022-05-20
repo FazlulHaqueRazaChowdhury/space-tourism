@@ -1,5 +1,5 @@
 #crew {
-    min-height: 100vh;
+    min-height: 100vh !important;
     background-image: url("https://i.ibb.co/RB0SNKr/background-crew-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;

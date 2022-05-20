@@ -38,3 +38,52 @@
 .height-80vh {
   min-height: 80vh;
 }
+.title{
+  margin-left: 40px;
+}
+@media (max-width:764px) {
+  #home{
+    background-image: url('https://i.ibb.co/WPSVWVf/background-home-tablet.jpg') !important;
+    min-height: 100vh;
+    overflow: hidden !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #destination{
+    background-image: url('https://i.ibb.co/9N0JxM3/background-destination-tablet.jpg') !important;
+    min-height: 100vh;
+    overflow: hidden !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #crew{
+    background-image: url('https://i.ibb.co/pKSdZJ8/background-crew-tablet.jpg') !important;
+    min-height: 100vh;
+    overflow: hidden !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width:480px) {
+  #home{
+    background-image: url('https://i.ibb.co/cxb586x/background-home-mobile.jpg') !important;
+    min-height: 100vh;
+    overflow: hidden !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #destination{
+    background-image: url('https://i.ibb.co/z2dT21D/background-destination-mobile.jpg') !important;
+    min-height: 100vh;
+    overflow: hidden !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #crew{
+    background-image: url('https://i.ibb.co/K55nDFz/background-crew-mobile.jpg') !important;
+    min-height: 100vh;
+    overflow: hidden !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

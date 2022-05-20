@@ -84,13 +84,14 @@ const Crew = () => {
     return (
         <div id='crew' className='flex flex-col items-center'>
             <Header />
-            <div className="container mx-auto">
-                <div className="title mt-[70px] lg:mt-[76px]">
-                    <h1 className='primary-font primary-color text-4xl animate__animated animate__slideInLeft'>
-                        <span className='mr-4 secondary-color-main'>02</span>
+            <div className="title self-start mt-[70px] lg:mt-[76px]">
+                <h1 className='primary-font primary-color text-4xl animate__animated animate__slideInLeft'>
+                    <span className='mr-4 secondary-color-main'>02</span>
 
-                        MEET YOUR CREW</h1>
-                </div>
+                    MEET YOUR CREW</h1>
+            </div>
+            <div className="container mx-auto">
+
             </div>
             <div className="container" id='flex-end'>
 

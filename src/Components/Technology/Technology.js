@@ -67,14 +67,15 @@ const Technology = () => {
     return (
         <div id='technology'>
             <Header />
+            <div className="title text-20px lg:text-[28px] my-[76px] ">
+                <h1 className='primary-font primary-color text-left text-4xl animate__animated animate__slideInLeft'>
+                    <span className='mr-4 secondary-color-main '>03</span>
+
+                    SPACE LAUNCH 101</h1>
+            </div>
             <div className="container mx-auto">
 
-                <div className="title text-20px lg:text-[28px] my-[76px]">
-                    <h1 className='primary-font primary-color text-4xl animate__animated animate__slideInLeft'>
-                        <span className='mr-4 secondary-color-main '>03</span>
 
-                        SPACE LAUNCH 101</h1>
-                </div>
             </div>
             <div className="technology-main-part">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center  gap-y-[40px]">
@@ -88,9 +89,9 @@ const Technology = () => {
                             }
                         </div>
                         <div className="info-part text-center lg:text-left">
-                            <h4 className='text-[16px] secondary-color primary-font font-light'>THE TERMINOLOGY…</h4>
-                            <h4 className='text-[56px] secondary-font primary-color my-[17px]'>{current.name.toLocaleUpperCase()}</h4>
-                            <p className='text-[18px] prime-font secondary-color lg:w-[444px] leading-[32px]'>{current.description}</p>
+                            <h4 className='text-[14px] lg:text-[16px] secondary-color primary-font font-light mt-5'>THE TERMINOLOGY…</h4>
+                            <h4 className='text-[40px] lg:text-[56px] secondary-font primary-color my-[17px]'>{current.name.toLocaleUpperCase()}</h4>
+                            <p className='text-[16px] lg:text-[18px] prime-font secondary-color lg:w-[444px] leading-[32px]'>{current.description}</p>
                         </div>
                     </div>
                     <div className="img-part-tech animate__animated animate__fadeIn order-first md:order-first lg:order-last">

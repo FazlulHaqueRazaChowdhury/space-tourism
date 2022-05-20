@@ -1,6 +1,8 @@
 import React from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 import './Banner.css'
 const Banner = () => {
+    const navigate = useNavigate();
     return (
         <div className='container mx-auto '>
             <div className="flex justify-center items-end height-80vh">
@@ -16,7 +18,9 @@ const Banner = () => {
                     <div className="circle-part animate__animated animate__slideInRight animate_delay-5 flex justify-center items-center">
 
                         <div className="out-circle">
-                            <button className="main-circle primary-background w-[200px] h-[200px] lg:w-[274px] lg:h-[274px]">
+                            <button className="main-circle primary-background w-[200px] h-[200px] lg:w-[274px] lg:h-[274px]" onClick={() => {
+                                navigate('/destination')
+                            }}>
                                 <h1 className='text-20px lg:text-[32px] secondary-font '>EXPLORE</h1>
                             </button>
                         </div>

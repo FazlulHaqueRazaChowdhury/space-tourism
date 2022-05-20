@@ -76,13 +76,14 @@ const Destination = () => {
     return (
         <div id='destination'>
             <Header />
-            <div id="main" className='container mx-auto'>
-                <div className="title text-20px lg:text-[28px] mt-[50px]">
-                    <h1 className='primary-font primary-color text-4xl animate__animated animate__slideInLeft'>
-                        <span className='mr-4 secondary-color-main'>01</span>
+            <div className="title text-20px lg:text-[28px] mt-[50px]">
+                <h1 className='primary-font primary-color text-4xl animate__animated animate__slideInLeft'>
+                    <span className='mr-4 secondary-color-main'>01</span>
 
-                        PICK YOUR DESTINATION</h1>
-                </div>
+                    PICK YOUR DESTINATION</h1>
+            </div>
+            <div id="main" className='container mx-auto'>
+
                 <div className="planet mt-[80px] container mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-y-[140px]   w-[100%] lg:justify-items-end">
                         <div className="img-part-dest w-[100%] animate__animated animate__fadeIn">
@@ -118,7 +119,7 @@ const Destination = () => {
                                     </div>
                                     <hr className='my-[55px] text-[#979797] w-[440px] mx-auto md:mx-auto lg:mx-0' />
                                     <div className="info-part text-center md:text-center lg:text-left">
-                                        <div className="flex gap-x-11 justify-center md:justify-center lg:justify-start">
+                                        <div className="flex flex-col md:flex-row lg:flex-row gap-x-11 gap-y-10 justify-center md:justify-center lg:justify-start">
                                             <div className="distance">
                                                 <h4 className='primary-font secondary-color'>AVG. DISTANCE</h4>
                                                 <h2 className='secondary-font text-3xl primary-color '>

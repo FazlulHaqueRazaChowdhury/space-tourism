@@ -1,0 +1,10 @@
+#destination {
+    min-height: 100vh;
+    background-image: url("https://i.ibb.co/FqzhkBR/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.planetBtn:hover{
+    border-bottom: 2px solid #979797;
+}

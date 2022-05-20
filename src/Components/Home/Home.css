@@ -1,0 +1,8 @@
+#home {
+    background-image: url('https://i.ibb.co/mCgp2wg/background-home-desktop.jpg');
+    min-height: 100vh;
+    overflow: hidden !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

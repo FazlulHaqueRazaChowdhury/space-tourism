@@ -1,0 +1,22 @@
+#technology{
+    min-height: 100vh;
+    background-image: url("https://i.ibb.co/4mLjxvX/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.tech-button{
+ border: 1px solid #979797;
+ border-radius: 100%;
+ width: 80px;
+ height: 80px;   
+}
+.tech-button:hover{
+ border: 1px solid var(--primary-color);
+ border-radius: 100%;
+ width: 80px;
+ height: 80px;   
+}
+p{
+    letter-spacing: 2px;
+}

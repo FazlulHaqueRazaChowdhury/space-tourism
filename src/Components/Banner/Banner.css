@@ -1,0 +1,26 @@
+
+.out-circle {
+    transition: background-color linear .5s;
+    height: 474px;
+    padding: 20%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.out-circle:hover{
+
+    background-color: var(--secondary-background);
+}
+
+.main-circle {
+
+    border-radius: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

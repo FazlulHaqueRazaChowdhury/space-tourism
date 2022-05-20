@@ -96,14 +96,14 @@ const Crew = () => {
 
                 <div id="crewMain" className='h-[100%]'>
                     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto justify-around justify-items-center items-center gap-x-[125px]">
-                        <div className="text-part  animate__animated animate__slideInLeft  flex flex-col items-center  lg:items-start mt-[20px] order-last lg:order-first">
-                            <div className="texts flex flex-col items-center justify-center lg:items-start lg:justify-start mb-[50px] ">
+                        <div className="text-part  animate__animated animate__slideInLeft  flex  flex-col-reverse md:flex-col lg:flex-col  items-center  lg:items-start mt-[20px] order-last lg:order-first">
+                            <div className="texts flex flex-col items-center justify-center lg:items-start lg:justify-start lg:mb-[50px] ">
                                 <h4 className='text-[26px] lg:text-[32px] secondary-color-main secondary-font'>{person.role}</h4>
                                 <h1 className='text-[40px] lg:text-[56px] primary-color secondary-font my-[20px]'>{person.name}</h1>
                                 <p className='text-justify text-[15px] lg:text-[18px] secondary-color prime-font lg:w-[440px]  mx-auto md:mx-auto lg:mx-0 md:text-center lg:text-left h-[100px]'>{person.bio}</p>
                             </div>
 
-                            <div className="buttons">
+                            <div className="mb-[200px]">
                                 {
                                     [...Array(data.length).keys()].map(single => <button className={
                                         `carousel 

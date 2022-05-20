@@ -77,9 +77,9 @@ const Technology = () => {
                 </div>
             </div>
             <div className="technology-main-part">
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center  gap-y-[40px]">
                     <div className="text-part mx-auto flex flex-col md:flex-col lg:flex-row gap-x-[80px] items-center justify-center animate__animated animate__slideInLeft order-last md:order-last lg:order-first">
-                        <div className="button-part flex flex-row md:flex-row lg:flex-col gap-y-[32px]">
+                        <div className="button-part flex flex-row md:flex-row lg:flex-col gap-x-[32px] gap-y-[32px]">
                             {
                                 [...Array(data.length).keys()].map(single => <button onClick={() => {
                                     handleChange(single);
@@ -87,7 +87,7 @@ const Technology = () => {
                                 }} className={`tech-button secondary-font text-[32px] ${current.id === single ? 'primary-background ' : 'primary-color'}`}>{single + 1}</button>)
                             }
                         </div>
-                        <div className="info-part">
+                        <div className="info-part text-center lg:text-left">
                             <h4 className='text-[16px] secondary-color primary-font font-light'>THE TERMINOLOGY…</h4>
                             <h4 className='text-[56px] secondary-font primary-color my-[17px]'>{current.name.toLocaleUpperCase()}</h4>
                             <p className='text-[18px] prime-font secondary-color lg:w-[444px] leading-[32px]'>{current.description}</p>

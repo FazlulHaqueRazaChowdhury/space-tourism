@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
-import logo from '../../assets/shared/icon-hamburger.svg'
+
 const Header = () => {
     const [nav, showNav] = useState(false);
     const navData = [
@@ -49,7 +49,7 @@ const Header = () => {
 
                         {
                             navData.map(nav =>
-                                <div className={`nav-item ml-auto h-full flex items-center primary-font ${location.pathname == nav.path ? 'border-b-2' : ''}`}>
+                                <div key={nav.id} className={`nav-item ml-auto h-full flex items-center primary-font ${location.pathname === nav.path ? 'border-b-2' : ''}`}>
 
                                     <Link className='links'
                                         to={nav.path}>

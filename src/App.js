@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Crew from './Components/Crew/Crew';
 import Technology from './Components/Technology/Technology';
-import Header from './Components/Header/Header';
+
 import Destination from './Components/Destination/Destination';
 import 'animate.css';
 import AnimatedCursor from "react-animated-cursor"

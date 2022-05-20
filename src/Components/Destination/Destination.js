@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import './Destination.css';
 const Destination = () => {
-    const [planets, setPlanets] = useState([]);
+
     const [planet, setPlanet] = useState({
         id: '1',
         name: "Moon",
@@ -69,10 +69,10 @@ const Destination = () => {
         }
     ]
     const handleButton = (id) => {
-        const found = fakedata.find(data => data.id == id);
+        const found = fakedata.find(data => data.id === id);
         setPlanet(found);
     }
-    console.log(fakedata);
+
     return (
         <div id='destination'>
             <Header />
@@ -94,7 +94,7 @@ const Destination = () => {
                                 <ul className='flex justify-center md:justify-center lg:justify-start gap-[35px]'>
                                     {
                                         fakedata.map(planete =>
-                                            <li><button className={`text-2xl primary-font font-[100] primary-color pb-[13px] planetBtn ${planete.id == planet.id ? 'border-b-2' : ''}`} onClick={() => {
+                                            <li key={planete.id}><button className={`text-2xl primary-font font-[100] primary-color pb-[13px] planetBtn ${planete.id === planet.id ? 'border-b-2' : ''}`} onClick={() => {
                                                 handleButton(planete.id)
                                             }}>{planete.name.toLocaleUpperCase()}</button></li>
                                         )

@@ -57,11 +57,9 @@ const Technology = () => {
     }
     useEffect(() => {
         setInterval(changeIt, 30000)
-    }, [])
+    })
     const handleChange = (index) => {
-
         setCurrent(data[index]);
-
 
     }
     return (
@@ -82,7 +80,7 @@ const Technology = () => {
                     <div className="text-part mx-auto flex flex-col md:flex-col lg:flex-row gap-x-[80px] items-center justify-center animate__animated animate__slideInLeft order-last md:order-last lg:order-first">
                         <div className="button-part flex flex-row md:flex-row lg:flex-col gap-x-[32px] gap-y-[32px]">
                             {
-                                [...Array(data.length).keys()].map(single => <button onClick={() => {
+                                [...Array(data.length).keys()].map((single, index) => <button key={index} onClick={() => {
                                     handleChange(single);
                                     setAnimate(true);
                                 }} className={`tech-button secondary-font text-[32px] ${current.id === single ? 'primary-background ' : 'primary-color'}`}>{single + 1}</button>)

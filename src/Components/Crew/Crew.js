@@ -62,11 +62,10 @@ const Crew = () => {
 
         if (x > data.length - 1) {
             x = 0;
-            console.log(x)
+
         }
         else {
-            console.log(x);
-            console.log(data[x].name);
+
             setPerson(data[x]);
             x++;
         }
@@ -106,7 +105,7 @@ const Crew = () => {
 
                             <div className="mb-[200px]">
                                 {
-                                    [...Array(data.length).keys()].map(single => <button className={
+                                    [...Array(data.length).keys()].map((single, index) => <button key={index} className={
                                         `carousel 
                                         
                                         ${single === person.id ? 'primary-background' : 'secondary-background'
